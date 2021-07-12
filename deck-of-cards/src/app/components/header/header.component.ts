@@ -11,6 +11,13 @@ export class HeaderComponent implements OnInit {
 
   @Output() onNewDeck: EventEmitter<Deck> = new EventEmitter<Deck>();
   @Output() carta: EventEmitter<String> = new EventEmitter<String>();
+
+  selectedOption?: String;
+
+  options = [
+    { name: "par", value: "par" },
+    { name: "impar", value: "impar" }
+  ]
  
   constructor(
     private apiService: ApiService
@@ -18,14 +25,12 @@ export class HeaderComponent implements OnInit {
   
   ngOnInit(): void {
   }
-
-  OnInput(event: any) {
-    this.carta.emit(event.target.value);
-  }
   
   newDeck() {
     this.apiService
       .postDeck()
       .subscribe((deck) => this.onNewDeck.emit(deck));
+
+    this.carta.emit(this.selectedOption); 
   }
 }

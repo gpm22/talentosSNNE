@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Deck } from 'src/app/services/api.models';
 import { ApiService } from './services/api.service';
  
@@ -11,8 +11,7 @@ export class AppComponent implements OnInit {
  
  public deck: Deck = {};
  public draw: boolean = false;
- @Input() carta?: String;
- @Output() cartaSaida: EventEmitter<String> = new EventEmitter<String>();
+ public carta: String = "";
  
  constructor(
  private apiService: ApiService
@@ -29,7 +28,6 @@ export class AppComponent implements OnInit {
 
  newCarta(carta: String){
    this.carta = carta;
-   this.cartaSaida.emit(this.carta);
  }
 
  drawed(){

@@ -1,5 +1,5 @@
 <ng-container *ngIf="deck">
- <app-header (onNewDeck)="onNewDeck($event)" (carta) = "carta"></app-header>
+ <app-header (onNewDeck)="onNewDeck($event)" (carta) = "newCarta($event)"></app-header>
  <app-deck [draw]="draw" [deck]="deck" [carta]="carta" ></app-deck>
  <div *ngIf="draw">
     {{drawed()}}

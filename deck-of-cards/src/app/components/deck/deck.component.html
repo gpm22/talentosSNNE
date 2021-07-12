@@ -1,8 +1,9 @@
 <div class="container-fluid">
+<p>Código entrado: {{carta}}</p>
+<div *ngIf="draw">
+    {{deckDraw()}}
+</div>
  <div class="row">
-    <div *ngIf="draw">
-        {{deckDraw()}}
-    </div>
     <div class="col-1 mb-5" *ngFor="let card of cards">
         <img [src]="card.image" />
     </div>
