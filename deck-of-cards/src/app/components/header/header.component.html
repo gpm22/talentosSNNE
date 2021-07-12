@@ -1,0 +1,27 @@
+<div class="jumbotron">
+    <h1 class="display-4">Advinhe a carta!</h1>
+    <p class="lead">Acerte a carta que irá aparecer e seja o mestre da advinhação!</p>
+    <hr class="my-4">
+    <h3 class="display-6">Regras:</h3>
+    <p>
+      Entre com o valor da carta que você acha que irá aparecer dentro da seguinte forma:<br>
+      O valor. A para ás, 2, 3, 4, 5, 6, 7, 8, 9, 0 (para dez), J (valete), Q (rainha) ou K (Rei). <br>
+      O naipe, S (espadas), D (Diamante), C (Paus) ou H (Copas).<br><br>
+
+      Exemplos:<br>ás de copas -> AH;<br> 10 de paus -> 0C;<br><br>
+
+      Se a acertar carta, você vence.<br>
+      Mas se errar, você <mark style="color:Tomato;background:none;">PERDE!!!!!!!!!</mark><br>
+      Jogue e se torne o maior advinho do multiverso!
+
+    <hr class="my-4">
+
+    <p>Qual será a carta?</p>
+    <input type="text"  (keyup.enter)="OnInput($event)"> 
+    <hr class="my-4">
+    <p class="lead">
+      <button class="btn btn-primary btn-lg" role="button" (click)="newDeck()">Mostrar Carta</button>
+    </p>
+
+    {{carta}}
+</div>

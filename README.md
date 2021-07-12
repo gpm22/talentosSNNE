@@ -11,3 +11,7 @@ Nesse repositório estão contidos os projetos criados durante o curso de capaci
 2. my-app :red_circle::red_circle::red_circle:
 
    Cover template for bootstrap.
+   
+3. deck-of-cards :spades::hearts::clubs::diamonds:
+
+   A game to guess which card will appear.
