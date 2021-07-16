@@ -1,0 +1,38 @@
+<div class="modal-header bg-light">
+  <h4 class="modal-title">Usuário # {{user?.id || 'Novo'}}</h4>
+  <button type="button" class="close" aria-label="Close" (click)="close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body bg-light">
+  <form [formGroup]="userForm">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Login</label>
+      <input type="text" class="form-control" [class.is-invalid]="userForm.get('login')?.errors"
+        placeholder="Digite o login" formControlName="login">
+      <div class="invalid-feedback">
+        Campo obrigatório.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Nome</label>
+      <input type="text" class="form-control" placeholder="Nome" formControlName="name">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Tipo</label>
+      <select class="form-control" formControlName="type">
+        <option *ngFor="let type of userTypes" [value]="type.value">{{type.label}}</option>
+      </select>
+    </div>
+  </form>
+  <div class="alert alert-warning" role="alert" *ngIf="showFeedbackOnlyPlay">
+    Esse tipo de usuário não pode editar!
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="userForm.invalid">
+    Formulário inválido!
+  </div>
+</div>
+<div class="modal-footer bg-light">
+  <button type="button" class="btn btn-outline-dark" (click)="close()">Fechar</button>
+  <button type="submit" class="btn btn-primary" (click)="submit()">Salvar</button>
+</div>

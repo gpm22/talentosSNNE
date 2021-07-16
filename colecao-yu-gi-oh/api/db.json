@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "login": "Macaco",
+      "name": "Seto Kaiba",
+      "type": "DUELISTA"
+    },
+    {
+      "id": 3,
+      "login": "yuginho",
+      "name": "Yugi Muto",
+      "type": "DUELISTA"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "name": "Obelisco, o Atormentador",
+      "monsterType": "Besta Divina",
+      "cardType": "Efeito",
+      "level": 10,
+      "ATK": 4000,
+      "DEF": 4000,
+      "text": "Requer 3 Tributos para ser Invocado por Invocação-Normal (não pode ser Baixado Normalmente). A Invocação-Normal deste card não pode ser negada. Quando Invocado por Invocação-Normal, cards e efeitos não podem ser ativados. Nenhum duelista pode escolher este card como alvo de efeitos de card. Uma vez por turno, durante a Fase Final, se este card foi Invocado por Invocação-Especial: envie-o para o Cemitério. Você pode oferecer 2 monstros como Tributo; destrua todos os monstros que seu oponente controla. Este card não pode declarar um ataque no turno em que este efeito for ativado.",
+      "img": "https://static.wikia.nocookie.net/yugioh/images/0/05/ObelisktheTormentor-PGLD-PT-GScR-1E.jpg/revision/latest/scale-to-width-down/300?cb=20150717190941&path-prefix=pt"
+    },
+    {
+      "id": 2,
+      "name": "Slifer, o Dragão Celeste",
+      "monsterType": "BESTA DIVINA",
+      "cardType": "EFEITO",
+      "level": "10",
+      "ATK": "?",
+      "DEF": "?",
+      "text": "Requer 3 Tributos para ser Invocado por Invocação-Normal (não pode ser Baixado Normalmente). A Invocação-Normal deste card não pode ser negada. Quando Invocado por Invocação-Normal, cards e efeitos não podem ser ativados. Durante a Fase Final, se este card foi Invocado por Invocação-Especial: envie-o para o Cemitério. Este card ganha 1000 de ATK e DEF para cada card em sua mão. Quando um ou mais monstros forem Invocados por Invocação-Normal ou Especial no lado do campo do seu oponente com a face para cima em Posição de Ataque: esses monstros perdem 2000 de ATK e, depois, se qualquer um deles tiver o ATK reduzido a 0 como resultado, destrua-o.",
+      "img": "https://static.wikia.nocookie.net/yugioh/images/7/76/SlifertheSkyDragon-CT13-PT-ScR-LE.jpg/revision/latest/scale-to-width-down/300?cb=20170411160410&path-prefix=pt"
+    }
+  ]
+}

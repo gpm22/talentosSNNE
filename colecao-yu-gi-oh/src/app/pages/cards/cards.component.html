@@ -1,0 +1,40 @@
+<div class ="w-100 h-100 p-2 d-flex flex-column justify-content-end">
+    <h1>Cartas<hr class="my-4"></h1>
+    <table class="table table-striped table-active mt-4">
+        <thead>
+            <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Imagem</th>
+            <th scope="col">Tipo da Carta</th>
+            <th scope="col">Tipo do Monstro</th>
+            <th scope="col">Nível</th>
+            <th scope="col">Ataque</th>
+            <th scope="col">Defesa</th>
+            <th scope="col">Descrição</th>
+            <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let card of cards">
+            <th scope="row">{{card.id}}</th>
+            <td>{{card.name}}</td>
+            <td><img [src]="card.img" /></td>
+            <td>{{card.cardType}}</td>
+            <td>{{card.monsterType}}</td>
+            <td>{{card.level}}</td>
+            <td>{{card.ATK}}</td>
+            <td>{{card.DEF}}</td>
+            <td>{{card.text}}</td>
+            <td>
+                <button type="button" class="btn btn-danger" (click)="delete(card)" >Excluir</button>
+                <button type="button" class="btn btn-secondary" (click)="edit(card)" >Editar</button>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button type="button" class="btn btn-primary" (click)="add()" >Criar</button>
+    
+    <app-footer></app-footer>
+</div>

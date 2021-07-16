@@ -1,0 +1,13 @@
+<div class="modal-header bg-light">
+  <h4 class="modal-title">Carta # {{card.id}}</h4>
+  <button type="button" class="close" aria-label="Close" (click)="close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body bg-light">
+  <p>Tem certeza que deseja excluir {{card.name}}?</p>
+</div>
+<div class="modal-footer bg-light">
+  <button type="button" class="btn btn-outline-dark" (click)="close()">Fechar</button>
+  <button type="submit" class="btn btn-primary" (click)="delete()">Excluir</button>
+</div>
