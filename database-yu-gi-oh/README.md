@@ -16,7 +16,7 @@
 
 ## Tabelas:
 
-![entidades](C:\Users\Gabriel\Documents\talentosSNNE\entidades.png)
+![entidades](https://github.com/gpm22/talentosSNNE/blob/master/database-yu-gi-oh/entities.png?raw=true)
 
 * Comando para criar a tabela para duelistas:
 
@@ -154,7 +154,7 @@
 
 * Conexões no DBeaver:
 
-  ![entidades_dBeaver](C:\Users\Gabriel\Documents\talentosSNNE\entidades_dBeaver.png)
+  ![entidades_dBeaver](https://github.com/gpm22/talentosSNNE/blob/master/database-yu-gi-oh/entities_dBeaver.png?raw=true)
 
 ## Índices
 
